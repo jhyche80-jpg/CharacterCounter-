@@ -1,9 +1,9 @@
 
-import React from 'react'
+import { TextStats } from '../types/index.ts'
 
 
+export function StatDisplay({characterCount, wordCount,readingTime}:TextStats) {
 
-export default function StatDisplay() {
     return (
         <div>
             
@@ -12,17 +12,17 @@ export default function StatDisplay() {
 
                 <div>
                     <h3>Character Count</h3>
-                    <p></p>
+                    <p>{characterCount}</p>
 
                 </div>
                 <div>
                     <h3>Word Count</h3>
-                    <p></p>
+                    <p>{wordCount}</p>
 
                 </div>
                 <div>
                     <h3>Time </h3>
-                    <p></p>
+                    <p>{readingTime}</p>
 
                 </div>
             </div>
