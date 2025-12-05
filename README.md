@@ -20,15 +20,6 @@ In this lab, you will create an interactive character counter application that d
 
 ## Problem 
 ### Problem Breakdown!/ Goal
-ex: 
-Building a login page
-→ UI (form)
-→ Input validation
-→ API call
-→ Error handling
-→ Redirect
-to make an arrow  First, hold down the Alt key. For a left-facing arrow, type the number 27 ←. A right arrow can be inserted by typing the number 26 →. Type the number 24 for an up arrow ↑, or 25 for a down arrow ↓.
-
 Building a Word counter:
 -  Ui 
 - Type Section 
@@ -51,10 +42,13 @@ Output will be the result off the input so number 1 above will be number 1 below
 
 ### Step-by-Step Process (What will I need to do)  
 The Outcome of every battle takes place in the planning phase. 
-1. 
-2. 
-3. 
-4. 
+1. Create a new React TypeScript project using Vite
+2.  Create the following folder structure
+3. Make the type for the Input text , Text stats , and display stats
+4.  Begin making the Text area component
+5. Start the display area component 
+6. Make the function for text stats and have it display in the area 
+
 
 
 ## What I did in detail 
@@ -93,7 +87,16 @@ Sometimes there are questions to reflect on the project but if there is not , Us
 
 ### Websites I used
 
+### Styles Used 
+- Ice Cold: #a0d2eb
 
+- Freeze Purple: #e5eaf5
+
+- Medium Purple: #d0bdf4
+
+- Purple Pain: #8458B3
+
+- Heavy Purple: #a28089
 
 
 
