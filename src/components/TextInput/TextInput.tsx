@@ -11,6 +11,7 @@ export default function TextInput({onTextChange}:TextInputProps) {
         <div>
             <h1>I am here</h1>
             <div className='textArea'>
+                <label htmlFor="Text">Enter Text Below</label>
                 <textarea
                     name="Text"
                     id="Text"

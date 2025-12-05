@@ -28,7 +28,7 @@ export default function Main() {
     <div>
       <TextInput
       onTextChange={UpdateValue}
-      placeholder="Enter Text Here..."/>
+     />
       <StatDisplay characterCount={characterCount}
       wordCount= {wordCount} 
        readingTime ={readingTime }
