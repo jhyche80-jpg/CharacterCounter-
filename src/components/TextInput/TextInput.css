@@ -1,0 +1,8 @@
+#Text{
+    background-color: black;
+    color: aquamarine;
+}
+#Text:focus{
+    border: 5px solid aquamarine;
+  
+}

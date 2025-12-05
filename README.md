@@ -32,9 +32,13 @@ Building a Word counter:
   - Time display 
 
 ### Questions + Answers  
-Ex: How do I get input?
-    How do I check it’s valid?
-    How do I display something back?
+1. How do I get character count in react? 
+   1. How do I access the text area text content to count it inside react?
+   - In React, you typically bind the <textarea> value to a state variable.
+   2. how could i use that to count the ammount? 
+   - after binding the characters into a count I can then find the count of words by using the legnth of the words.
+2. How do I get word count in react ?
+
 ### Input ?
 This can be innerchangeable depending on the goal or even add more if you are using buttons or other forms but mostly here you should think about what you wanna input  and how that will be inputed 
 ### Output ??

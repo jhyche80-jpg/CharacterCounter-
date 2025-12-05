@@ -5,6 +5,7 @@ export interface TextInputProps {
   placeholder?: string;
   initialValue?: string;
 }
+
 // Stats Display 
 
 export interface TextStats {
