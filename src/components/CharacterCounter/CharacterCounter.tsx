@@ -1,11 +1,10 @@
-import StatDisplay from "../StatsDisplay/StateDisplay"
-import TextInput from "../TextInput/TextInput"
-import { CharacterCounterProps } from "../types"
+import { StatDisplay } from "../StatsDisplay/StateDisplay.tsx"
+import TextInput from "../TextInput/TextInput.tsx"
 import React, { useState } from 'react'
 /// parent 
-export default function Main({minWords,maxWords,targetReadingTime}:CharacterCounterProps) {
+export default function Main() {
     const[value,setValue] = useState<string>("")
-    const [count, setCount]= useState<number>(0)
+    
     const UpdateValue=(updated:string)=>{
         setValue(updated)
     }
@@ -16,7 +15,14 @@ export default function Main({minWords,maxWords,targetReadingTime}:CharacterCoun
    //calculate the word count reading ime 
    //define a WPM ( words per minuite)
    const wpm = 230
-    const readingTime = 
+   // calculate compute time in minutes 
+   const timeinMin = wordCount/wpm
+   // convert min to seconds
+   const totalSeconds:number = Math.ceil(timeinMin*60) 
+   const minuites:number = Math.floor(totalSeconds/60)
+   const seconds:number = totalSeconds%60
+   const readingTime = `${minuites.toString().padStart(2,'0')}:${seconds.toString().padStart(2,"0")}`
+    
 
   return (
     <div>

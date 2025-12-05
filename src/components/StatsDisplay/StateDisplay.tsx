@@ -1,5 +1,5 @@
 
-import { TextStats } from '../types/index.ts'
+import type { TextStats } from '../types/index.ts'
 
 
 export function StatDisplay({characterCount, wordCount,readingTime}:TextStats) {

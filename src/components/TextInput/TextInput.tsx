@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import './TextInput.css'
-import { TextInputProps } from '../types'
 
-export default function TextInput({onTextChange, placeholder}:TextInputProps) {
+import './TextInput.css'
+import type { TextInputProps } from '../types'
+
+export default function TextInput({onTextChange}:TextInputProps) {
     
     const handlechange = (e: React.ChangeEvent<HTMLTextAreaElement>)=>{
         onTextChange(e.target.value)
@@ -17,7 +17,7 @@ export default function TextInput({onTextChange, placeholder}:TextInputProps) {
                     rows={25}
                     cols={100}
                     onChange={handlechange}>
-                    {placeholder}
+                   
                 </textarea>
             </div>
 
