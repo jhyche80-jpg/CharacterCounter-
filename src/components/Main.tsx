@@ -1,8 +1,9 @@
-import StatDisplay from "../StatsDisplay/StateDisplay"
-import TextInput from "../TextInput/TextInput"
+import CharacterCounter from "./CharacterCounter/CharacterCounter"
+import StatDisplay from "./StatsDisplay/StateDisplay"
+import TextInput from "./TextInput/TextInput"
 
 import React, { useState } from 'react'
-/// parent 
+
 export default function Main() {
     const[value,setValue] = useState<string>("")
     const [count, setCount]= useState<number>(0)
