@@ -1,6 +1,6 @@
 import { StatDisplay } from "../StatsDisplay/StateDisplay.tsx"
 import TextInput from "../TextInput/TextInput.tsx"
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import './CharacterCounter.css'
 /// parent 
 export default function Main() {
