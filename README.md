@@ -105,7 +105,9 @@ Problems  will arise every time you code knowing the problem is key to understan
 
 ### Programs I used 
 
-
+- Typescript 
+- React 
+- Css
 ### Websites I used
 - https://coreui.io/answers/how-to-convert-a-string-to-an-array-in-javascript/#:~:text=Use%20the%20split()%20method,array%20of%20characters%20or%20elements.&text=The%20split()%20method%20divides,characters%2C%20including%20spaces%20and%20punctuation.
 - https://scholarwithin.com/average-reading-speed#:~:text=The%20average%20reader%20can%20read,words%20per%20minute%20(WPM).
