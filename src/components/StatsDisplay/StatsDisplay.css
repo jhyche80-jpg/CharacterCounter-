@@ -1,0 +1,21 @@
+.Contaier {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #a28089;
+    width: auto;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    
+}
+
+.cont {
+    width: auto;
+    font-weight: 700;
+}
+
+.char{
+    font-size: 30px;
+}

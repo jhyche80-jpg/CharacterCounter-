@@ -38,13 +38,23 @@ Building a Word counter:
    2. how could i use that to count the ammount? 
    - after binding the characters into a count I can then find the count of words by using the legnth of the words.
 2. How do I get word count in react ?
+I can use the split method. The split() method divides a string into an array based on the specified separator. Using an empty string '' as the separator splits the string into individual characters, including spaces and punctuation.
 
 ### Input ?
-This can be innerchangeable depending on the goal or even add more if you are using buttons or other forms but mostly here you should think about what you wanna input  and how that will be inputed 
+Text from the text area 
 ### Output ??
-Output will be the result off the input so number 1 above will be number 1 below. 
+character count
+Word Count 
+time to read. 
+↑ 
+all shown in another component 
+In short I neeed to pass string from the text area to the main component and then do things with that string that will show the count , word count , and time to read ( all three might need algorithims.)
 
+
+Note : functions have to be passed to the children. 
 ### Step-by-Step Process (What will I need to do)  
+
+
 The Outcome of every battle takes place in the planning phase. 
 1. Create a new React TypeScript project using Vite
 2.  Create the following folder structure
@@ -57,7 +67,12 @@ The Outcome of every battle takes place in the planning phase.
 
 ## What I did in detail 
 In this section you should say what you did and why and if you made refinements as well. 
-
+1. I made went through each of the components and made the html I wanted to display
+2. I determined ( after a long time)  which component would be the parent component
+3. I made the Character counter  the  parent and started trying to pass the words that are typed into the box there from the textInput.tsx.
+4. I then took those words and made the stat display. I pulles the string made from the input and gave t a use state of value. then i manioulated the value to show the display state
+   - I had to do calculations to find the time and also filter through the string to find character and word count 
+5. I then went on to ass styling to the page
 
 ## Troubleshooting 
     Ask: “What should happen right now?”
@@ -66,23 +81,25 @@ In this section you should say what you did and why and if you made refinements 
 ### Problems 
 Problems  will arise every time you code knowing the problem is key to understanding it !
 
-
-1.  
-2. 
-3. 
-4. 
+1.  I couldn't get the code to display 
+2. I had a type issue originally with the reading time 
 
 ### Solutions
  Finding out how to fix those problems will be important!
 
-1. 
-2. 
-3. 
-4. 
+1. I had a path probelm and didnt map it right 
+2. The interface for the time was being read ass  string when it should be a number. 
 
 ## Reflection
-Sometimes there are questions to reflect on the project but if there is not , Use the area to reflect on what wass learned and how problems were fixed and handled 
+1. How did you handle state updates when the text changed?
+- In text Input I added an onchange label that would run a functuion that would update the value in the parent function. 
 
+2. What considerations did you make when calculating reading time?
+- I had to take the word count andd turn it into times in a minute ( after researching the words read per minute), divide it by the (wpm/ Words per minute) then convert it to seconds and then minutes again then take the left over time and change it to second then add it to a string that displayed the time.  
+3. How did you ensure the UI remained responsive during rapid text input?
+- I stored only the text value into state and cuomputing the derived  values like the character count , word count and reading time therre instead of in state . This kept updates light and leet react rerender only what changes even when typing rapidly . 
+4. What challenges did you face when implementing the statistics calculations?
+- I have  touble using and remembering Modulo it is something I am not used to using so it really makes me nervious using it. However the biggest cchallenge is make the code reflect the math. 
 ## References 
 
 
@@ -90,7 +107,8 @@ Sometimes there are questions to reflect on the project but if there is not , Us
 
 
 ### Websites I used
-
+- https://coreui.io/answers/how-to-convert-a-string-to-an-array-in-javascript/#:~:text=Use%20the%20split()%20method,array%20of%20characters%20or%20elements.&text=The%20split()%20method%20divides,characters%2C%20including%20spaces%20and%20punctuation.
+- https://scholarwithin.com/average-reading-speed#:~:text=The%20average%20reader%20can%20read,words%20per%20minute%20(WPM).
 ### Styles Used 
 - Ice Cold: #a0d2eb
 

@@ -2,6 +2,7 @@
 // Text Input 
 export interface TextInputProps {
   onTextChange: (text: string) => void;
+  value:string 
   
  
 }

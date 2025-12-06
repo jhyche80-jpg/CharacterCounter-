@@ -1,6 +1,7 @@
 import { StatDisplay } from "../StatsDisplay/StateDisplay.tsx"
 import TextInput from "../TextInput/TextInput.tsx"
 import React, { useState } from 'react'
+import './CharacterCounter.css'
 /// parent 
 export default function Main() {
     const[value,setValue] = useState<string>("")
@@ -25,9 +26,10 @@ export default function Main() {
     
 
   return (
-    <div>
+    <div className="CounterContainer">
       <TextInput
       onTextChange={UpdateValue}
+      value={value}
      />
       <StatDisplay characterCount={characterCount}
       wordCount= {wordCount} 
